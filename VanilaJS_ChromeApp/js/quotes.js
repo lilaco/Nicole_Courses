@@ -1,44 +1,44 @@
 // 명언 10개 준비하기!
 const quotes = [
     {
-        quote: "Hello1",
-        author: "It's me"
+        quote: "If I have seen further it is by standing on the shoulders of Giants.",
+        author: "Isaac Newton"
     },
     {
-        quote: "Hello2",
-        author: "It's me"
+        quote: "In the field of observation, chance favors only the prepared mind.",
+        author: "Louis Pasteur"
     },
     {
-        quote: "Hello3",
-        author: "It's me"
+        quote: "I'm only one, still I am one. I can not do everything, still I can do something. I will not refuse to do the something I can do.",
+        author: "Helen Keller"
     },
     {
-        quote: "Hello4",
-        author: "It's me"
+        quote: "To laugh at yourself is to love yourself.",
+        author: "Mickey Mouse"
     },
     {
-        quote: "Hello5",
-        author: "It's me"
+        quote: "You cannot be happy everyday, but there are happy things everyday.",
+        author: "Pooh"
     },
     {
-        quote: "Hello6",
-        author: "It's me"
+        quote: "Cambiar el mundo, amigo Sancho, no es ni utopía ni locura, es justicia.",
+        author: "Don Quixote"
     },
     {
-        quote: "Hello7",
-        author: "It's me"
+        quote: "It's not whether you get knocked, It's whether you get back up.",
+        author: "Vince Lombardi"
     },
     {
-        quote: "Hello8",
-        author: "It's me"
+        quote: "They say that time changes things, but you actually have to change them yourself.",
+        author: "Andy Warhol"
     },
     {
-        quote: "Hello9",
-        author: "It's me"
+        quote: "If you would win a man to your cause, First convince him that you are his sincere friend.",
+        author: "Abraham Lincoln"
     },
     {
-        quote: "Hello10",
-        author: "It's me"
+        quote: "Patience is bitter, but its fruit is sweet.",
+        author: "Aristoteles"
     }
 ];
 
