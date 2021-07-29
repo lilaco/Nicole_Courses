@@ -2,6 +2,14 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
 
+// To do list를 저장하기 위한 array 선언.
+const toDos = [];
+
+function saveToDos(){
+    // Javascript 객체(Object) 나 배열(Array) 를 String으로 변환 할 수 있다.
+    localStorage.setItem("todos", JSON.stringify(toDos));
+}
+
 function deleteToDo(event){
     // console.dir 을 통해서 버튼에 해당하는 li를 찾아갈 수 있다. 지금은 target.parentElement 또는 target.parentNode로 추적가능
     // target은 클릭된 HTML Element
@@ -32,7 +40,9 @@ function handleToDoSubmit(event) {
     // input에 현재 내용을 복사. 이미 newTodo 변수에 값을 저장했기 때문에 이후의 value는 신경쓰지 않아도 됨.
     const newTodo = toDoInput.value;
     toDoInput.value = "";
+    toDos.push(newTodo);
     paintToDo(newTodo);
+    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
