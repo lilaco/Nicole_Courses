@@ -37,7 +37,7 @@ const quotes = [
         author: "Abraham Lincoln"
     },
     {
-        quote: "Patience is bitter, but its fruit is sweet.",
+        quote: "Patience is bitter, but its fruit is sweet.",                                                                                      
         author: "Aristoteles"
     }
 ];
