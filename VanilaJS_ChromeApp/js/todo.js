@@ -49,6 +49,7 @@ function handleToDoSubmit(event) {
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
+// 람다를 사용하지 않을때, function으로 선언하여 사용해도 됨.
 function sayHello(item){
     console.log("This is the turn of", item);
 }
@@ -58,5 +59,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 // ToDos가 없을때 처리
 if(savedToDos){
     const parsedToDos = JSON.parse(savedToDos);
-    parsedToDos.forEach(sayHello);
+    // sayHello fucntion 호출이 아닌 람다를 사용하여 forEach 구문 완성.(short-cut)
+    parsedToDos.forEach((item) => console.log("This is the turn of ", item));
 }
