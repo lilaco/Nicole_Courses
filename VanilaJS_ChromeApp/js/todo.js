@@ -5,7 +5,9 @@ const toDoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos"
 
 // To do list를 저장하기 위한 array 선언.
-const toDos = [];
+// application이 시작될 때, toDos array는 항상 비어있기 때문에 새로고침을 하면, 이전의 localstorage의 데이터가 삭제된다.
+// const -> let으로 변경하여 데이터 변경이 가능토록 한다.
+let toDos = [];
 
 function saveToDos(){
     // Javascript 객체(Object) 나 배열(Array) 를 String으로 변환 할 수 있다.
@@ -60,5 +62,9 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 if(savedToDos){
     const parsedToDos = JSON.parse(savedToDos);
     // sayHello fucntion 호출이 아닌 람다를 사용하여 forEach 구문 완성.(short-cut)
-    parsedToDos.forEach((item) => console.log("This is the turn of ", item));
+    // parsedToDos.forEach((item) => console.log("This is the turn of ", item));
+
+    //toDos 배열에 새로 입력한 toDo 데이터를 저장.
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
 }
