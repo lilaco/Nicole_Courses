@@ -80,3 +80,5 @@ if(savedToDos){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo); // 이 과정에서 새로고침을 해도 기존에 입력한 To Do list를 저장한다. 
 }
+
+// filter에서 array의 item을 유지하고 싶으면 true를 return 해야함.
