@@ -22,13 +22,16 @@ function deleteToDo(event){
     // 따라서 클릭하면 삭제하고 싶은 li를 다음과 같이 정의할 수 있다.
     const li = event.target.parentElement;
     li.remove();
+    // HTML 을 지울 수 있지만, localStorage에서는 지울 수 없다.
 }
 
 function paintToDo(newTodo){
     // 속성 추가하기
     const li = document.createElement("li");
+    // li에 Object id 를 추가하기.
+    li.id = newTodo.id;
     const span = document.createElement("span");
-    span.innerText = newTodo;
+    span.innerText = newTodo.text; // Object 로 받는 것을 text로 받기 위해 .text 추가.
     const button = document.createElement("button");
     button.innerText = "❌"
     button.addEventListener("click", deleteToDo);
@@ -44,8 +47,17 @@ function handleToDoSubmit(event) {
     // input에 현재 내용을 복사. 이미 newTodo 변수에 값을 저장했기 때문에 이후의 value는 신경쓰지 않아도 됨.
     const newTodo = toDoInput.value;
     toDoInput.value = "";
-    toDos.push(newTodo);
-    paintToDo(newTodo);
+    
+    //To do list 데이터가 입력될때, 기존의 text 방식으로 입력하지 않고, 객체로 입력받는다.
+    const newTodoObj = {
+        text:newTodo,
+        id: Date.now(), // 매번 1000밀리초마다 랜덤 ID인 것 처럼 현재 시간에 대한 숫자 데이터를 받아낸다.
+    };
+    // To do list가 저장되는 부분(String text)
+    //toDos.push(newTodo);
+    toDos.push(newTodoObj);
+    // paintToDo(newTodo);
+    paintToDo(newTodoObj);
     saveToDos();
 }
 
@@ -66,5 +78,5 @@ if(savedToDos){
 
     //toDos 배열에 새로 입력한 toDo 데이터를 저장.
     toDos = parsedToDos;
-    parsedToDos.forEach(paintToDo);
+    parsedToDos.forEach(paintToDo); // 이 과정에서 새로고침을 해도 기존에 입력한 To Do list를 저장한다. 
 }
