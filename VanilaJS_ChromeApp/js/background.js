@@ -9,4 +9,6 @@ bgImage.src = `img/${chosenImage}`;
 
 // body태그에 image 추가하기.
 // append는 selector의 가장 뒤에 prepend는 selector의 가장 앞에 온다.
-document.body.appendChild(bgImage);
+// document.body.appendChild(bgImage);
+
+document.body.style.backgroundImage = `url(img/${chosenImage})`;
