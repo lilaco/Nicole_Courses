@@ -21,8 +21,14 @@ function deleteToDo(event){
 
     // 따라서 클릭하면 삭제하고 싶은 li를 다음과 같이 정의할 수 있다.
     const li = event.target.parentElement;
-    li.remove();
+
     // HTML 을 지울 수 있지만, localStorage에서는 지울 수 없다.
+    li.remove();
+
+     //클릭한 Todo의 id는 삭제하고 나머지는 남긴다.
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+    saveToDos();//saveToDos를 통하여 배열의 변경된 사항을 다시 저장.
+
 }
 
 function paintToDo(newTodo){
