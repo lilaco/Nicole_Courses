@@ -6,6 +6,7 @@ function onGeoOk(position){
     const lat = position.coords.latitude;
     const lng = position.coords.longitude;
     console.log("You live it", lat, lng);
+    //무케두밥한테 인사하기
 
     //JS에서 URL 불러오기
     //https://api.openweathermap.org/data/2.5/weather?lat=37.8863616&lon=127.75915520000001&appid=08f841ff5310514857f776f59cea661d
