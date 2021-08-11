@@ -6,7 +6,7 @@ const playerHandsome = false;
 const playerFat = "little bit";
 
 // 입력과 속도는 빠르지만 key를 알 수 없음. value의 의미를 알기 어렵다.
-const player = ["zoong", 121212, false, "little bit"];
+// const player = ["zoong", 121212, false, "little bit"];
 
 // Object
 const player = {
@@ -15,3 +15,12 @@ const player = {
     handsome: false, 
     fat: "little bit"
 };
+
+console.log(player);
+console.log(player.name);
+// Object 값을 불러내는 다른 방법.
+console.log(player["name"]);
+
+// Object의 property속성 추가
+player.lastName = "potato";
+player.points = 15;
