@@ -1,3 +1,5 @@
+/*
+// Learn about Object
 console.log("hi");
 
 const playerName = "zoong";
@@ -23,4 +25,21 @@ console.log(player["name"]);
 
 // Object의 property속성 추가
 player.lastName = "potato";
-player.points = 15;
+player.points = player.points + 15;
+console.log(player.points);
+*/ 
+
+console.log("Hello my name is Zoong");
+console.log("Hello my name is Kang");
+console.log("Hello my name is Cho");
+console.log("Hello my name is Mooke");
+console.log("Hello my name is Flynn");
+console.log("Hello my name is Jude");
+
+function sayHello(){
+    console.log("Hello! my name is C");
+}
+
+sayHello("zoong");
+sayHello("dal");
+sayHello("lynn");
