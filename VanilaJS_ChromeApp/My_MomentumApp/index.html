@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쥬웅 MOMENTUM⏲</title>
+</head>
+<style>
+
+</style>
+<body>
+    <!-- 이름을 입력할 폼 추가. localStorage에 저장되어 있다면 숨기기. -->
+    <form id="login-form" class="hidden">
+        <input type="text" required maxlength="20" placeholder="당신의 이름은?">
+        <input type="submit" value="LOG IN">
+    </form>
+    
+    <!-- 명언 -->
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- 현재시간 -->
+    <h2 id="clock">00:00:00</h2>
+
+    <!-- 날씨 -->
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+</body>
+</html>
