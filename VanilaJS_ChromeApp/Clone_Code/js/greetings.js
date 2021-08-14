@@ -17,7 +17,7 @@ function onLoginSubmit(event) {
     // localStorage에 username 값을 저장. (key, value)
     localStorage.setItem(USERNAME_KEY, username);
     
-    paintGreetings(username)
+    paintGreetings(username);
 }
 
 // greeting의 입력과 hidden class를 제거하는 것이 반복 사용되어 function으로 처리
