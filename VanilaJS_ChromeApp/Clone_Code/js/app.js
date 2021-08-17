@@ -29,17 +29,34 @@ player.points = player.points + 15;
 console.log(player.points);
 */ 
 
-console.log("Hello my name is Zoong");
-console.log("Hello my name is Kang");
-console.log("Hello my name is Cho");
-console.log("Hello my name is Mooke");
-console.log("Hello my name is Flynn");
-console.log("Hello my name is Jude");
-
-function sayHello(){
-    console.log("Hello! my name is C");
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
 }
 
-sayHello("zoong");
-sayHello("dal");
-sayHello("lynn");
+sayHello("zoong", 10);
+sayHello("dal", 23);
+sayHello("lynn", 21);
+
+// Circulator 함수를 만들어서 argument 이해하기.
+function plus(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+}
+
+function divide(a, b){
+    console.log(a / b);
+}
+
+divide(5, 2);
+
+plus(8, 60);
+
+const player = {
+    name: "zoong",
+    // Object 내부에 function 삽입
+    sayHello: function(otherPersonName){
+        console.log("hello! " + otherPersonName + " nice to meet you!");
+    },
+};
+
+console.log(player.name);
+player.sayHello("Daseul");;
