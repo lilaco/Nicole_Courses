@@ -29,34 +29,60 @@ player.points = player.points + 15;
 console.log(player.points);
 */ 
 
-function sayHello(nameOfPerson, age){
-    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
-}
+// function sayHello(nameOfPerson, age){
+//     console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+// }
 
-sayHello("zoong", 10);
-sayHello("dal", 23);
-sayHello("lynn", 21);
+// sayHello("zoong", 10);
+// sayHello("dal", 23);
+// sayHello("lynn", 21);
 
-// Circulator 함수를 만들어서 argument 이해하기.
-function plus(firstNumber, secondNumber) {
-    console.log(firstNumber + secondNumber);
-}
+// // Circulator 함수를 만들어서 argument 이해하기.
+// function plus(firstNumber, secondNumber) {
+//     console.log(firstNumber + secondNumber);
+// }
 
-function divide(a, b){
-    console.log(a / b);
-}
+// function divide(a, b){
+//     console.log(a / b);
+// }
 
-divide(5, 2);
+// divide(5, 2);
+// plus(8, 60);
 
-plus(8, 60);
+// const player = {
+//     name: "zoong",
+//     // Object 내부에 function 삽입
+//     sayHello: function(otherPersonName){
+//         console.log("hello! " + otherPersonName + " nice to meet you!");
+//     },
+// };
 
-const player = {
-    name: "zoong",
-    // Object 내부에 function 삽입
-    sayHello: function(otherPersonName){
-        console.log("hello! " + otherPersonName + " nice to meet you!");
-    },
-};
+// console.log(player.name);
+// player.sayHello("Daseul");;
 
-console.log(player.name);
-player.sayHello("Daseul");;
+// recap 1
+const a = 5;
+const isNicoFat = true;
+
+//isNicoFat = false; // 값을 업데이트 할 수 없다. const 상수
+
+let wasNicoFat = true;
+wasNicoFat = false;
+
+// var Never!, Always const!, sometimes let!
+
+let hello;
+console.log(hello); // undefied
+
+let helloNull = null;
+console.log(helloNull);
+
+//배열 담기
+const me = "sexy";
+const days = [1, 2, false, true, null, undefined, "text", me];
+
+const toBuy = ["potato", "tomato", "pizza"];
+
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
