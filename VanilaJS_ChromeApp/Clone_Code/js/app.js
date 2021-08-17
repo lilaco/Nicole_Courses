@@ -61,28 +61,54 @@ console.log(player.points);
 // player.sayHello("Daseul");;
 
 // recap 1
-const a = 5;
-const isNicoFat = true;
+// const a = 5;
+// const isNicoFat = true;
 
-//isNicoFat = false; // 값을 업데이트 할 수 없다. const 상수
+// //isNicoFat = false; // 값을 업데이트 할 수 없다. const 상수
 
-let wasNicoFat = true;
-wasNicoFat = false;
+// let wasNicoFat = true;
+// wasNicoFat = false;
 
-// var Never!, Always const!, sometimes let!
+// // var Never!, Always const!, sometimes let!
 
-let hello;
-console.log(hello); // undefied
+// let hello;
+// console.log(hello); // undefied
 
-let helloNull = null;
-console.log(helloNull);
+// let helloNull = null;
+// console.log(helloNull);
 
-//배열 담기
-const me = "sexy";
-const days = [1, 2, false, true, null, undefined, "text", me];
+// //배열 담기
+// const me = "sexy";
+// const days = [1, 2, false, true, null, undefined, "text", me];
 
-const toBuy = ["potato", "tomato", "pizza"];
+// const toBuy = ["potato", "tomato", "pizza"];
 
-console.log(toBuy);
-toBuy.push("meat");
-console.log(toBuy);
+// console.log(toBuy);
+// toBuy.push("meat");
+// console.log(toBuy);
+
+// recap 2
+const player = {
+    name: "Zoong",
+    age: 29,
+};
+
+player.name = "jiwoong";
+console.log(player);
+
+// object update
+player.sexy = "soon";
+console.log(player);
+
+function plus(potato, salad){
+    console.log(potato + salad);
+}
+
+plus(5, 10);
+
+alert("lalalalal");
+
+function minusFive(potato){
+ console.log(potato - 5);
+}
+minusFive(10, 10, 6, 3, 3); // argument가 여러개여도 앞에 1개만 동작함. fucntion에서 argument가 1개이기 때문에.
