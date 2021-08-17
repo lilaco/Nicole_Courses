@@ -88,27 +88,55 @@ console.log(player.points);
 // console.log(toBuy);
 
 // recap 2
-const player = {
-    name: "Zoong",
-    age: 29,
+// const player = {
+//     name: "Zoong",
+//     age: 29,
+// };
+
+// player.name = "jiwoong";
+// console.log(player);
+
+// // object update
+// player.sexy = "soon";
+// console.log(player);
+
+// function plus(potato, salad){
+//     console.log(potato + salad);
+// }
+
+// plus(5, 10);
+
+// alert("lalalalal");
+
+// function minusFive(potato){
+//  console.log(potato - 5);
+// }
+// minusFive(10, 10, 6, 3, 3); // argument가 여러개여도 앞에 1개만 동작함. fucntion에서 argument가 1개이기 때문에.
+
+// const calculator = {
+//     add: function (a, b) {
+//         console.log(a, b);
+//     },
+// };
+
+// homework in object & function.
+// make up your calculator(includes plus+, minus-, divide/, powerof**)
+const homeworkCalculator = {
+    add: function(a, b){
+        console.log(a + b);
+    },
+    minus: function(a, b){
+        console.log(a - b);
+    },
+    divide: function(a, b){
+        console.log(a / b);
+    },
+    powerof: function(a, b){
+        console.log(a ** b);
+    }
 };
 
-player.name = "jiwoong";
-console.log(player);
-
-// object update
-player.sexy = "soon";
-console.log(player);
-
-function plus(potato, salad){
-    console.log(potato + salad);
-}
-
-plus(5, 10);
-
-alert("lalalalal");
-
-function minusFive(potato){
- console.log(potato - 5);
-}
-minusFive(10, 10, 6, 3, 3); // argument가 여러개여도 앞에 1개만 동작함. fucntion에서 argument가 1개이기 때문에.
+homeworkCalculator.add(1, 2);
+homeworkCalculator.minus(1, 2);
+homeworkCalculator.divide(10, 2);
+homeworkCalculator.powerof(4, 4);
