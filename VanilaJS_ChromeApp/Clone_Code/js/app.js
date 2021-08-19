@@ -140,3 +140,5 @@ homeworkCalculator.add(1, 2);
 homeworkCalculator.minus(1, 2);
 homeworkCalculator.divide(10, 2);
 homeworkCalculator.powerof(4, 4);
+
+console.log("this is fake !! 😎");
