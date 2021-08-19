@@ -121,24 +121,35 @@ console.log(player.points);
 
 // homework in object & function.
 // make up your calculator(includes plus+, minus-, divide/, powerof**)
-const homeworkCalculator = {
-    add: function(a, b){
-        alert(a + b);
-    },
-    minus: function(a, b){
-        alert(a - b);
-    },
-    divide: function(a, b){
-        alert(a / b);
-    },
-    powerof: function(a, b){
-        alert(a ** b);
-    }
-};
+// const homeworkCalculator = {
+//     add: function(a, b){
+//         alert(a + b);
+//     },
+//     minus: function(a, b){
+//         alert(a - b);
+//     },
+//     divide: function(a, b){
+//         alert(a / b);
+//     },
+//     powerof: function(a, b){
+//         alert(a ** b);
+//     }
+// };
 
-homeworkCalculator.add(1, 2);
-homeworkCalculator.minus(1, 2);
-homeworkCalculator.divide(10, 2);
-homeworkCalculator.powerof(4, 4);
+// homeworkCalculator.add(1, 2);
+// homeworkCalculator.minus(1, 2);
+// homeworkCalculator.divide(10, 2);
+// homeworkCalculator.powerof(4, 4);
 
-console.log("this is fake !! 😎");
+// console.log("this is fake !! 😎");
+
+// console.log(homeworkCalculator.plus(2,3));
+
+const age = 96;
+function calculateKrAge(ageOfForeigner){
+    ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
