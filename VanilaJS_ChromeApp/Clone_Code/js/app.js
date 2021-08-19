@@ -123,16 +123,16 @@ console.log(player.points);
 // make up your calculator(includes plus+, minus-, divide/, powerof**)
 const homeworkCalculator = {
     add: function(a, b){
-        console.log(a + b);
+        alert(a + b);
     },
     minus: function(a, b){
-        console.log(a - b);
+        alert(a - b);
     },
     divide: function(a, b){
-        console.log(a / b);
+        alert(a / b);
     },
     powerof: function(a, b){
-        console.log(a ** b);
+        alert(a ** b);
     }
 };
 
