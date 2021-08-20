@@ -130,6 +130,10 @@ const homeworkCalculator = {
         //alert(a - b);
         return a - b;
     },
+    times: function(a, b){
+        //alert(a * b);
+        return a * b;
+    },
     divide: function(a, b){
         //alert(a / b);
         return a / b;
@@ -142,6 +146,11 @@ const homeworkCalculator = {
 
 const plusResult = homeworkCalculator.add(1, 2);
 console.log(plusResult);
+const minusResult = homeworkCalculator.minus(plusResult, 10);
+const timesResult = homeworkCalculator.times(10, minusResult);
+const divideResult = homeworkCalculator.divide(timesResult, plusResult);
+const powerResult = homeworkCalculator.powerof(divideResult, minusResult);
+
 // homeworkCalculator.minus(1, 2);
 // homeworkCalculator.divide(10, 2);
 // homeworkCalculator.powerof(4, 4);
