@@ -87,7 +87,7 @@ console.log(player.points);
 // toBuy.push("meat");
 // console.log(toBuy);
 
-// recap 2
+// #recap 2
 // const player = {
 //     name: "Zoong",
 //     age: 29,
@@ -119,37 +119,37 @@ console.log(player.points);
 //     },
 // };
 
-// homework in object & function.
+// #homework in object & function.
 // make up your calculator(includes plus+, minus-, divide/, powerof**)
-const homeworkCalculator = {
-    add: function(a, b){
-        //alert(a + b);
-        return a + b;
-    },
-    minus: function(a, b){
-        //alert(a - b);
-        return a - b;
-    },
-    times: function(a, b){
-        //alert(a * b);
-        return a * b;
-    },
-    divide: function(a, b){
-        //alert(a / b);
-        return a / b;
-    },
-    powerof: function(a, b){
-        //alert(a ** b);
-        return a ** b;
-    }
-};
+// const homeworkCalculator = {
+//     add: function(a, b){
+//         //alert(a + b);
+//         return a + b;
+//     },
+//     minus: function(a, b){
+//         //alert(a - b);
+//         return a - b;
+//     },
+//     times: function(a, b){
+//         //alert(a * b);
+//         return a * b;
+//     },
+//     divide: function(a, b){
+//         //alert(a / b);
+//         return a / b;
+//     },
+//     powerof: function(a, b){
+//         //alert(a ** b);
+//         return a ** b;
+//     }
+// };
 
-const plusResult = homeworkCalculator.add(1, 2);
-console.log(plusResult);
-const minusResult = homeworkCalculator.minus(plusResult, 10);
-const timesResult = homeworkCalculator.times(10, minusResult);
-const divideResult = homeworkCalculator.divide(timesResult, plusResult);
-const powerResult = homeworkCalculator.powerof(divideResult, minusResult);
+// const plusResult = homeworkCalculator.add(1, 2);
+// console.log(plusResult);
+// const minusResult = homeworkCalculator.minus(plusResult, 10);
+// const timesResult = homeworkCalculator.times(10, minusResult);
+// const divideResult = homeworkCalculator.divide(timesResult, plusResult);
+// const powerResult = homeworkCalculator.powerof(divideResult, minusResult);
 
 // homeworkCalculator.minus(1, 2);
 // homeworkCalculator.divide(10, 2);
@@ -159,13 +159,40 @@ const powerResult = homeworkCalculator.powerof(divideResult, minusResult);
 
 // console.log(homeworkCalculator.plus(2,3));
 
-const age = 96;
-function calculateKrAge(ageOfForeigner){
-    ageOfForeigner + 2;
+// #understand return
+// const age = 96;
+// function calculateKrAge(ageOfForeigner){
+//     ageOfForeigner + 2;
 
-    return "hello";
+//     return "hello";
+// }
+
+// const krAge = calculateKrAge(age);
+
+// console.log(krAge);
+
+// #conditionals
+// const age = prompt("How old are you?"); // 동작을 할때까지 자바스크립트를 멈추게함. 스타일도 제한적임. 오래된 방법.
+
+// console.log(typeof age); //변수의 타입을 보는 방법.
+
+// #How to change type from string to number?
+// const numberAge = parseInt(age);
+// console.log(typeof numberAge);
+
+const age = parseInt(prompt("How old are you?"));
+console.log(isNaN(age));
+
+if(isNaN(age)){
+    console.log("Please write a number");
+    alert("please write only number.");
+} else {
+    console.log("Thank you for writing your age.");
+    if(18 >= age){
+        alert("You can't drink an alcohol.😒");
+    } else if(18 < age && 50 >= age){
+        alert("You can drink an alcolol. Bottom's up!😇🍻");
+    } else {
+        alert("I don't think so.. You'd better take care.😕");
+    }
 }
-
-const krAge = calculateKrAge(age);
-
-console.log(krAge);
