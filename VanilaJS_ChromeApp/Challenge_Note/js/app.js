@@ -57,4 +57,32 @@ console.log("Hey!");
 
 // let something;
 // console.log(something);
-// //------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
+
+/*
+* #2.5 Arrays
+*
+* Written by ZOONG
+* Created date : 2021-08-25
+*/
+
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+// Get Item from Array
+console.log(daysOfWeek);
+
+// Add one more day to the array
+daysOfWeek.push("sun");
+
+// Check array is updated.
+console.log(daysOfWeek);
+
+const toBuy = ["potato", "tomato", "pizza"];
+toBuy.push("kimbab");
+
+console.log(toBuy);
+
+//I wonder about this.
+toBuy[15] = "coffee";
+console.log(toBuy);
+//------------------------------------------------------------------------------------
