@@ -66,23 +66,44 @@ console.log("Hey!");
 * Created date : 2021-08-25
 */
 
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+// const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-// Get Item from Array
-console.log(daysOfWeek);
+// // Get Item from Array
+// console.log(daysOfWeek);
 
-// Add one more day to the array
-daysOfWeek.push("sun");
+// // Add one more day to the array
+// daysOfWeek.push("sun");
 
-// Check array is updated.
-console.log(daysOfWeek);
+// // Check array is updated.
+// console.log(daysOfWeek);
 
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbab");
+// const toBuy = ["potato", "tomato", "pizza"];
+// toBuy.push("kimbab");
 
-console.log(toBuy);
+// console.log(toBuy);
 
-//I wonder about this.
-toBuy[15] = "coffee";
-console.log(toBuy);
+// //I wonder about this.
+// toBuy[15] = "coffee";
+// console.log(toBuy);
+//------------------------------------------------------------------------------------
+
+/*
+* #2.6 Objects
+*
+* Written by ZOONG
+* Created date : 2021-08-25
+*/
+
+const player = {
+    name: "zoong",
+    points: 10,
+    fat: true,
+};
+console.log(player);
+
+player.lastName = "potato"; // Object의 property 추가
+player.points = player.points + 15; // Object의 property value 수정
+console.log(player);
+//Object에 접근하는 다른 방법
+console.log(player["name"]);
 //------------------------------------------------------------------------------------
