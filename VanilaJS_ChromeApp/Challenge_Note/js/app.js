@@ -273,30 +273,52 @@ console.log("Hey!");
 * Created date : 2021-08-26
 */
 
-const age = parseInt(prompt("How old are you?"));
+// const age = parseInt(prompt("How old are you?"));
 
-console.log(age);
-console.log(isNaN(age));
+// console.log(age);
+// console.log(isNaN(age));
+
+// // if(isNaN(age)){
+// //     console.log("Please write a number.");
+// // } else {
+// //     console.log("Thank you for writing your age.");
+// // }
+
+// // 음주가능 나이 계산(먼저 해보기)
+// // 18세 이하인지 판별, 18세 초과 - 50세 이하, 50세 초과 건강이 걱정되어요.
 
 // if(isNaN(age)){
-//     console.log("Please write a number.");
+//     alert("Please write a number.");
 // } else {
-//     console.log("Thank you for writing your age.");
+//     if(18 > age){
+//         alert("You can't drink an alcohol!😒");
+//     } else if(18 < age && 50 >= age){
+//         alert("Bottom's up!🍻");
+//     } else {
+//         alert("I think you shouldn't drink alcohol for your health.😯");
+//     }
 // }
 
-// 음주가능 나이 계산(먼저 해보기)
-// 18세 이하인지 판별, 18세 초과 - 50세 이하, 50세 초과 건강이 걱정되어요.
+//-----------------------------------------------------------------------------------
 
-if(isNaN(age)){
-    alert("Please write a number.");
-} else {
-    if(18 > age){
-        alert("You can't drink an alcohol!😒");
-    } else if(18 < age && 50 >= age){
-        alert("Bottom's up!🍻");
-    } else {
-        alert("I think you shouldn't drink alcohol for your health.😯");
-    }
+/*
+* #2.15 Conditionals part Three
+*
+* Written by ZOONG
+* Created date : 2021-08-26
+*/
+
+const age = parseInt(prompt("How old are you?"));
+
+if (isNaN(age) || age < 0) {
+    console.log("Please write a real positive number.");
+} else if (age < 18) {
+    console.log("You are too young.");
+} else if (age >= 18 && age <= 50) {
+    console.log("You can drink.");
+} else if (age > 50 && age <= 80){
+    console.log("You should exercise.");
+} else if (age > 80) {
+    console.log("You can do whatever you want.");
 }
-
 //-----------------------------------------------------------------------------------
