@@ -114,11 +114,48 @@ console.log("Hey!");
 * Written by ZOONG
 * Created date : 2021-08-26
 */
-function sayHello(){
-    console.log("Hello! my name is C");
+
+// function sayHello(){
+//     console.log("Hello! my name is C");
+// }
+
+// sayHello("nico");
+// sayHello("dal");
+// sayHello("lynn");
+//-----------------------------------------------------------------------------------
+
+/*
+* #2.8 Functions part Two
+*
+* Written by ZOONG
+* Created date : 2021-08-26
+*/
+
+function sayHello(nameOfPerson, age){
+    console.log("Hello! my name is " + nameOfPerson + " and I'm " + age);
 }
 
-sayHello("nico");
-sayHello("dal");
-sayHello("lynn");
-//-----------------------------------------------------------------------------------
+sayHello("nico", 10);
+sayHello("dal", 23);
+sayHello("lynn", 21);
+
+function plus(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+}
+function divide(a, b){
+    console.log(a / b);
+}
+
+plus(8, 60);
+divide(98, 20);
+
+// Let's create player object.
+const player = {
+    name: "nico",
+    sayHello: function(otherPersonName){
+        console.log("hello!" + otherPersonName + " nice to meet you!");
+    },
+};
+
+console.log(player.name);
+player.sayHello("lynn");
