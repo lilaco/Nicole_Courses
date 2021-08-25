@@ -257,8 +257,9 @@ const age = parseInt(prompt("How old are you?"));
 
 console.log(typeof "15", typeof 15);
 console.log(age);
+console.log(isNaN(age));
 
-if(isNaN == age){ //NaN 처리가 잘 되지 않는다.
+if(isNaN(age)){ //NaN 처리가 잘 되지 않는다.
     alert("Please write your age as number.");
 } else {
     alert("Your age is " + age +"😊");
