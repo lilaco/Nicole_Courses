@@ -167,34 +167,79 @@ console.log("Hey!");
 * Written by ZOONG
 * Created date : 2021-08-26
 */
-const calculatorExample = {
-    add: function (a, b) {
-        console.log(a, b);
-    },
-};
-// a+b, a-b, a*b, a/b, a**b 기능이 있는 object 만들기
+
+// const calculatorExample = {
+//     add: function (a, b) {
+//         console.log(a, b);
+//     },
+// };
+// // a+b, a-b, a*b, a/b, a**b 기능이 있는 object 만들기
+
+// const calculator = {
+//     add: function (firstNumber, secondNumber) {
+//         console.log(firstNumber + secondNumber);
+//     },
+//     minus: function (firstNumber, secondNumber) {
+//         console.log(firstNumber - secondNumber);
+//     },
+//     times: function (firstNumber, secondNumber) {
+//         console.log(firstNumber * secondNumber);
+//     },
+//     divide: function (firstNumber, secondNumber) {
+//         console.log(firstNumber / secondNumber);
+//     },
+//     powerOf: function (firstNumber, secondNumber) {
+//         console.log(firstNumber / secondNumber);
+//     },
+// };
+
+// calculator.add(12,14);
+// calculator.minus(22,13);
+// calculator.times(2,3);
+// calculator.divide(16,4);
+// calculator.powerOf(3,4);
+//-----------------------------------------------------------------------------------
+
+/*
+* #2.11 Returns
+*
+* Written by ZOONG
+* Created date : 2021-08-26
+*/
 
 const calculator = {
-    add: function (firstNumber, secondNumber) {
-        console.log(firstNumber + secondNumber);
+    plus: function (firstNumber, secondNumber) {
+        return(firstNumber + secondNumber);
     },
     minus: function (firstNumber, secondNumber) {
-        console.log(firstNumber - secondNumber);
+        return(firstNumber - secondNumber);
     },
     times: function (firstNumber, secondNumber) {
-        console.log(firstNumber * secondNumber);
+        return(firstNumber * secondNumber);
     },
     divide: function (firstNumber, secondNumber) {
-        console.log(firstNumber / secondNumber);
+        return(firstNumber / secondNumber);
     },
     powerOf: function (firstNumber, secondNumber) {
-        console.log(firstNumber / secondNumber);
+        return(firstNumber / secondNumber);
     },
 };
 
-calculator.add(12,14);
-calculator.minus(22,13);
-calculator.times(2,3);
-calculator.divide(16,4);
-calculator.powerOf(3,4);
-//-----------------------------------------------------------------------------------
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.powerOf(divideResult, minusResult);
+
+
+
+console.log(plusResult);
+
+const age = 96;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
