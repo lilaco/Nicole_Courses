@@ -131,31 +131,70 @@ console.log("Hey!");
 * Created date : 2021-08-26
 */
 
-function sayHello(nameOfPerson, age){
-    console.log("Hello! my name is " + nameOfPerson + " and I'm " + age);
-}
+// function sayHello(nameOfPerson, age){
+//     console.log("Hello! my name is " + nameOfPerson + " and I'm " + age);
+// }
 
-sayHello("nico", 10);
-sayHello("dal", 23);
-sayHello("lynn", 21);
+// sayHello("nico", 10);
+// sayHello("dal", 23);
+// sayHello("lynn", 21);
 
-function plus(firstNumber, secondNumber) {
-    console.log(firstNumber + secondNumber);
-}
-function divide(a, b){
-    console.log(a / b);
-}
+// function plus(firstNumber, secondNumber) {
+//     console.log(firstNumber + secondNumber);
+// }
+// function divide(a, b){
+//     console.log(a / b);
+// }
 
-plus(8, 60);
-divide(98, 20);
+// plus(8, 60);
+// divide(98, 20);
 
-// Let's create player object.
-const player = {
-    name: "nico",
-    sayHello: function(otherPersonName){
-        console.log("hello!" + otherPersonName + " nice to meet you!");
+// // Let's create player object.
+// const player = {
+//     name: "nico",
+//     sayHello: function(otherPersonName){
+//         console.log("hello!" + otherPersonName + " nice to meet you!");
+//     },
+// };
+
+// console.log(player.name);
+// player.sayHello("lynn");
+//-----------------------------------------------------------------------------------
+
+/*
+* #2.9 - 2.10 Recap 1, Recap 2
+*
+* Written by ZOONG
+* Created date : 2021-08-26
+*/
+const calculatorExample = {
+    add: function (a, b) {
+        console.log(a, b);
+    },
+};
+// a+b, a-b, a*b, a/b, a**b 기능이 있는 object 만들기
+
+const calculator = {
+    add: function (firstNumber, secondNumber) {
+        console.log(firstNumber + secondNumber);
+    },
+    minus: function (firstNumber, secondNumber) {
+        console.log(firstNumber - secondNumber);
+    },
+    times: function (firstNumber, secondNumber) {
+        console.log(firstNumber * secondNumber);
+    },
+    divide: function (firstNumber, secondNumber) {
+        console.log(firstNumber / secondNumber);
+    },
+    powerOf: function (firstNumber, secondNumber) {
+        console.log(firstNumber / secondNumber);
     },
 };
 
-console.log(player.name);
-player.sayHello("lynn");
+calculator.add(12,14);
+calculator.minus(22,13);
+calculator.times(2,3);
+calculator.divide(16,4);
+calculator.powerOf(3,4);
+//-----------------------------------------------------------------------------------
