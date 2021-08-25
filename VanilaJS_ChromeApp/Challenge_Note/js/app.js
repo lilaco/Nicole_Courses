@@ -207,39 +207,60 @@ console.log("Hey!");
 * Created date : 2021-08-26
 */
 
-const calculator = {
-    plus: function (firstNumber, secondNumber) {
-        return(firstNumber + secondNumber);
-    },
-    minus: function (firstNumber, secondNumber) {
-        return(firstNumber - secondNumber);
-    },
-    times: function (firstNumber, secondNumber) {
-        return(firstNumber * secondNumber);
-    },
-    divide: function (firstNumber, secondNumber) {
-        return(firstNumber / secondNumber);
-    },
-    powerOf: function (firstNumber, secondNumber) {
-        return(firstNumber / secondNumber);
-    },
-};
+// const calculator = {
+//     plus: function (firstNumber, secondNumber) {
+//         return firstNumber + secondNumber;
+//     },
+//     minus: function (firstNumber, secondNumber) {
+//         return firstNumber - secondNumber;
+//     },
+//     times: function (firstNumber, secondNumber) {
+//         return firstNumber * secondNumber;
+//     },
+//     divide: function (firstNumber, secondNumber) {
+//         return firstNumber / secondNumber;
+//     },
+//     powerOf: function (firstNumber, secondNumber) {
+//         return firstNumber / secondNumber;
+//     },
+// };
 
-const plusResult = calculator.plus(2, 3);
-const minusResult = calculator.minus(plusResult, 10);
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.powerOf(divideResult, minusResult);
+// const plusResult = calculator.plus(2, 3);
+// const minusResult = calculator.minus(plusResult, 10);
+// const timesResult = calculator.times(10, minusResult);
+// const divideResult = calculator.divide(timesResult, plusResult);
+// const powerResult = calculator.powerOf(divideResult, minusResult);
 
 
 
-console.log(plusResult);
+// console.log(plusResult);
 
-const age = 96;
-function calculateKrAge(ageOfForeigner){
-    return ageOfForeigner + 2;
+// const age = 96;
+// function calculateKrAge(ageOfForeigner){
+//     return ageOfForeigner + 2;
+// }
+
+// const krAge = calculateKrAge(age);
+
+// console.log(krAge);
+//-----------------------------------------------------------------------------------
+
+/*
+* #2.13 Conditionals
+*
+* Written by ZOONG
+* Created date : 2021-08-26
+*/
+
+const age = parseInt(prompt("How old are you?"));
+
+
+console.log(typeof "15", typeof 15);
+console.log(age);
+
+if(isNaN == age){ //NaN 처리가 잘 되지 않는다.
+    alert("Please write your age as number.");
+} else {
+    alert("Your age is " + age +"😊");
 }
-
-const krAge = calculateKrAge(age);
-
-console.log(krAge);
+//-----------------------------------------------------------------------------------
