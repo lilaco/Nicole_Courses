@@ -400,24 +400,85 @@ console.log("Hey!");
 * Created date : 2021-08-27
 */
 
-// Event를 사용하고 싶을때, Web API document를 찾아보거나. console.dir("element"); 를 활용할 것
+// // Event를 사용하고 싶을때, Web API document를 찾아보거나. console.dir("element"); 를 활용할 것
 
-const title = document.querySelector("div.hello h1");
+// const title = document.querySelector("div.hello h1");
 
-console.dir(title);
+// console.dir(title);
+
+// function handleTitleClick() {
+//     title.style.color = "blue";
+// }
+
+// function handleMouseEnter() {
+//     title.innerText = "Mouse is here!";
+// }
+
+// function handleMouseLeave() {
+//     title.innerText = "Mouse is gone!";
+// }
+
+// title.addEventListener("click", handleTitleClick);
+// title.addEventListener("mouseenter", handleMouseEnter);
+// title.addEventListener("mouseleave", handleMouseLeave);
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.5 More Event
+*
+* Written by ZOONG
+* Created date : 2021-08-27
+*/
+
+const h1 = document.querySelector("div.hello h1");
+
+console.dir(h1);
 
 function handleTitleClick() {
-    title.style.color = "blue";
+    h1.style.color = "blue";
 }
 
 function handleMouseEnter() {
-    title.innerText = "Mouse is here!";
+    h1.innerText = "Mouse is here!";
 }
 
 function handleMouseLeave() {
-    title.innerText = "Mouse is gone!";
+    h1.innerText = "Mouse is gone!";
 }
 
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
+function handleWindowResize() {
+    // document (body, title, head)의 경우는 중요한 element에 속해서 document에서 바로 불러올 수 있지만,
+    // 다른 태그는 querySelector나 getElementById 등으로 찾아와야 한다.
+    document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+    alert("How dare you!😐");
+}
+
+function handleWindowOffline() {
+    alert("📢You need to WIFI!");
+}
+
+function handleWindowOnline() {
+    alert("ALLLLL GOOOOOOD!!📡")
+}
+
+h1.addEventListener("click", handleTitleClick);
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+
+// Event를 실행시키는 다른 방법
+// title.onclick = handleTitleClick;
+// title.onmouseenter = handleMouseEnter;
+// title.onmouseleave = handleMouseLeave;
+
+// 하지만, 니꼬가 addEventListener를 더 선호하는 이유는,
+// 나중에 removeEventListener를 통해서 event listener를 제거할 수 있기 때문.
+
+// window는 기본적으로 제공.
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
