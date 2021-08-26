@@ -360,7 +360,34 @@ console.log("Hey!");
 
 // querySelector는 element를 css방식으로 검색할 수 있다.(CSS Selector)
 // querySeclector는 첫번째 것만 가져온다. 모두 가져오고 싶다면 querySelectorALl을 사용.
-const title = document.querySelector(".hello h1");
-console.log(title);
+// const title = document.querySelector(".hello h1");
+// console.log(title);
 
-title.innerText = "Hello😃"
+// title.innerText = "Hello😃"
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.3 Events
+*
+* Written by ZOONG
+* Created date : 2021-08-27
+*/
+
+// querySelector is best way to access element!
+const title = document.querySelector("div.hello h1");
+
+// console.log(title);
+
+// title.innerText = "Hello!";
+
+// //on이 앞에 있는 object는 event. style도 변경가능.
+
+
+
+function handleTitleClick() {
+    console.log("title was clicked!");
+    title.style.color = "blue";
+}
+
+//항상 이런식으로 사용할 것. function을 직접 실행하지 않고 Listener를 통해서 실행 할 수 있도록 한다.
+title.addEventListener("click", handleTitleClick);
