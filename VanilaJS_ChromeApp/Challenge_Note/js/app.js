@@ -330,7 +330,21 @@ console.log("Hey!");
 * Created date : 2021-08-26
 */
 
-console.dir(document);
-document.title = "Hi"; // document를 이용해서 title을 바꿀수 있다. javascript는 HTML과 연결되어있음.
-document.title = "Hello! From JS."
+// console.dir(document);
+// document.title = "Hi"; // document를 이용해서 title을 바꿀수 있다. javascript는 HTML과 연결되어있음.
+// document.title = "Hello! From JS."
 //-----------------------------------------------------------------------------------
+
+/*
+* #3.1 HTML in Javascript
+*
+* Written by ZOONG
+* Created date : 2021-08-27
+*/
+const title = document.querySelector("#title");
+console.dir(title);
+
+title.innerText = "Got you!";
+
+console.log(title.id);
+console.log(title.className);
