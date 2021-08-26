@@ -341,10 +341,26 @@ console.log("Hey!");
 * Written by ZOONG
 * Created date : 2021-08-27
 */
-const title = document.querySelector("#title");
-console.dir(title);
 
-title.innerText = "Got you!";
+// const title = document.querySelector("#title");
+// console.dir(title);
 
-console.log(title.id);
-console.log(title.className);
+// title.innerText = "Got you!";
+
+// console.log(title.id);
+// console.log(title.className);
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.2 Searching For Elements
+*
+* Written by ZOONG
+* Created date : 2021-08-27
+*/
+
+// querySelector는 element를 css방식으로 검색할 수 있다.(CSS Selector)
+// querySeclector는 첫번째 것만 가져온다. 모두 가져오고 싶다면 querySelectorALl을 사용.
+const title = document.querySelector(".hello h1");
+console.log(title);
+
+title.innerText = "Hello😃"
