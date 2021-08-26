@@ -308,17 +308,29 @@ console.log("Hey!");
 * Created date : 2021-08-26
 */
 
-const age = parseInt(prompt("How old are you?"));
+// const age = parseInt(prompt("How old are you?"));
 
-if (isNaN(age) || age < 0) {
-    console.log("Please write a real positive number.");
-} else if (age < 18) {
-    console.log("You are too young.");
-} else if (age >= 18 && age <= 50) {
-    console.log("You can drink.");
-} else if (age > 50 && age <= 80){
-    console.log("You should exercise.");
-} else if (age > 80) {
-    console.log("You can do whatever you want.");
-}
+// if (isNaN(age) || age < 0) {
+//     console.log("Please write a real positive number.");
+// } else if (age < 18) {
+//     console.log("You are too young.");
+// } else if (age >= 18 && age <= 50) {
+//     console.log("You can drink.");
+// } else if (age > 50 && age <= 80){
+//     console.log("You should exercise.");
+// } else if (age > 80) {
+//     console.log("You can do whatever you want.");
+// }
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.0 Document Objects
+*
+* Written by ZOONG
+* Created date : 2021-08-26
+*/
+
+console.dir(document);
+document.title = "Hi"; // document를 이용해서 title을 바꿀수 있다. javascript는 HTML과 연결되어있음.
+document.title = "Hello! From JS."
 //-----------------------------------------------------------------------------------
