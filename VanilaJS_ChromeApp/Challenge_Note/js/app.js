@@ -373,21 +373,51 @@ console.log("Hey!");
 * Created date : 2021-08-27
 */
 
-// querySelector is best way to access element!
+// // querySelector is best way to access element!
+// const title = document.querySelector("div.hello h1");
+
+// // console.log(title);
+
+// // title.innerText = "Hello!";
+
+// // //on이 앞에 있는 object는 event. style도 변경가능.
+
+
+
+// function handleTitleClick() {
+//     console.log("title was clicked!");
+//     title.style.color = "blue";
+// }
+
+// //항상 이런식으로 사용할 것. function을 직접 실행하지 않고 Listener를 통해서 실행 할 수 있도록 한다.
+// title.addEventListener("click", handleTitleClick);
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.4 Events part Two
+*
+* Written by ZOONG
+* Created date : 2021-08-27
+*/
+
+// Event를 사용하고 싶을때, Web API document를 찾아보거나. console.dir("element"); 를 활용할 것
+
 const title = document.querySelector("div.hello h1");
 
-// console.log(title);
-
-// title.innerText = "Hello!";
-
-// //on이 앞에 있는 object는 event. style도 변경가능.
-
-
+console.dir(title);
 
 function handleTitleClick() {
-    console.log("title was clicked!");
     title.style.color = "blue";
 }
 
-//항상 이런식으로 사용할 것. function을 직접 실행하지 않고 Listener를 통해서 실행 할 수 있도록 한다.
+function handleMouseEnter() {
+    title.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave() {
+    title.innerText = "Mouse is gone!";
+}
+
 title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
