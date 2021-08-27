@@ -430,55 +430,85 @@ console.log("Hey!");
 * Created date : 2021-08-27
 */
 
+// const h1 = document.querySelector("div.hello h1");
+
+// console.dir(h1);
+
+// function handleTitleClick() {
+//     h1.style.color = "blue";
+// }
+
+// function handleMouseEnter() {
+//     h1.innerText = "Mouse is here!";
+// }
+
+// function handleMouseLeave() {
+//     h1.innerText = "Mouse is gone!";
+// }
+
+// function handleWindowResize() {
+//     // document (body, title, head)의 경우는 중요한 element에 속해서 document에서 바로 불러올 수 있지만,
+//     // 다른 태그는 querySelector나 getElementById 등으로 찾아와야 한다.
+//     document.body.style.backgroundColor = "tomato";
+// }
+
+// function handleWindowCopy() {
+//     alert("How dare you!😐");
+// }
+
+// function handleWindowOffline() {
+//     alert("📢You need to WIFI!");
+// }
+
+// function handleWindowOnline() {
+//     alert("ALLLLL GOOOOOOD!!📡")
+// }
+
+// h1.addEventListener("click", handleTitleClick);
+// h1.addEventListener("mouseenter", handleMouseEnter);
+// h1.addEventListener("mouseleave", handleMouseLeave);
+
+
+// // Event를 실행시키는 다른 방법
+// // title.onclick = handleTitleClick;
+// // title.onmouseenter = handleMouseEnter;
+// // title.onmouseleave = handleMouseLeave;
+
+// // 하지만, 니꼬가 addEventListener를 더 선호하는 이유는,
+// // 나중에 removeEventListener를 통해서 event listener를 제거할 수 있기 때문.
+
+// // window는 기본적으로 제공.
+// window.addEventListener("resize", handleWindowResize);
+// window.addEventListener("copy", handleWindowCopy);
+// window.addEventListener("offline", handleWindowOffline);
+// window.addEventListener("online", handleWindowOnline);
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.6 CSS in Javascript
+*
+* Written by ZOONG
+* Created date : 2021-08-27
+*/
+
 const h1 = document.querySelector("div.hello h1");
 
-console.dir(h1);
+function handlerTitleClick() {
+    const currentColor = h1.style.color;
+    let newColor;
 
-function handleTitleClick() {
-    h1.style.color = "blue";
+    if(currentColor === "blue"){
+       newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
 }
 
-function handleMouseEnter() {
-    h1.innerText = "Mouse is here!";
-}
+h1.addEventListener("click", handlerTitleClick);
 
-function handleMouseLeave() {
-    h1.innerText = "Mouse is gone!";
-}
-
-function handleWindowResize() {
-    // document (body, title, head)의 경우는 중요한 element에 속해서 document에서 바로 불러올 수 있지만,
-    // 다른 태그는 querySelector나 getElementById 등으로 찾아와야 한다.
-    document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy() {
-    alert("How dare you!😐");
-}
-
-function handleWindowOffline() {
-    alert("📢You need to WIFI!");
-}
-
-function handleWindowOnline() {
-    alert("ALLLLL GOOOOOOD!!📡")
-}
-
-h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
-
-
-// Event를 실행시키는 다른 방법
-// title.onclick = handleTitleClick;
-// title.onmouseenter = handleMouseEnter;
-// title.onmouseleave = handleMouseLeave;
-
-// 하지만, 니꼬가 addEventListener를 더 선호하는 이유는,
-// 나중에 removeEventListener를 통해서 event listener를 제거할 수 있기 때문.
-
-// window는 기본적으로 제공.
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+// Javascript Steps!
+// step 1. Find the element
+// step 2. listen for element
+// step 3. React element
+//-----------------------------------------------------------------------------------
