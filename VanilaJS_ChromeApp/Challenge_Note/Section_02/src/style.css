@@ -1,0 +1,15 @@
+h1 {
+    color: white;
+}
+
+body.yellow {
+    background-color: wheat;
+}
+
+body.purple {
+    background-color: palevioletred;
+}
+
+body.blue {
+    background-color: skyblue;
+}
