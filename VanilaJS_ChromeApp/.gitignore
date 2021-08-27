@@ -1,0 +1,4 @@
+# 특정 폴더를 ignore
+/Challenge_Note/Section_01/.cache
+/Challenge_Note/Section_01/dist
+/Challenge_Note/Section_01/node_modules
