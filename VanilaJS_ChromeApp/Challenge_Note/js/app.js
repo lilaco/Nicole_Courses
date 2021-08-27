@@ -519,17 +519,38 @@ console.log("Hey!");
 * Written by ZOONG
 * Created date : 2021-08-28
 */
-const CLICKED = "clicked";
+// const CLICKED = "clicked";
 
+// const h1 = document.querySelector("div.hello h1");
+
+// function handleTitleClick() { 
+//     if(h1.className === CLICKED) {
+//         h1.className = "";
+//     } else {
+//         h1.className = CLICKED;
+//     }
+// }
+
+// h1.addEventListener("click", handleTitleClick);
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.8 CSS in Javascript Part Three
+*
+* Written by ZOONG
+* Created date : 2021-08-28
+*/
 const h1 = document.querySelector("div.hello h1");
 
-function handleTitleClick() { 
-    if(h1.className === CLICKED) {
-        h1.className = "";
-    } else {
-        h1.className = CLICKED;
-    }
+function handleTitleClick() {
+    const clickedClass = "clicked";
+//     if (h1.classList.contains(clickedClass)) {
+//         h1.classList.remove(clickedClass);
+//     } else {
+//         h1.classList.add(clickedClass);
+//     }
+    h1.classList.toggle(clickedClass);
 }
+    
 
 h1.addEventListener("click", handleTitleClick);
-//-----------------------------------------------------------------------------------
