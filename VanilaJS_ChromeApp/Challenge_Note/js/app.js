@@ -491,24 +491,45 @@ console.log("Hey!");
 * Created date : 2021-08-27
 */
 
+// const h1 = document.querySelector("div.hello h1");
+
+// function handlerTitleClick() {
+//     const currentColor = h1.style.color;
+//     let newColor;
+
+//     if(currentColor === "blue"){
+//        newColor = "tomato";
+//     } else {
+//         newColor = "blue";
+//     }
+//     h1.style.color = newColor;
+// }
+
+// h1.addEventListener("click", handlerTitleClick);
+
+// // Javascript Steps!
+// // step 1. Find the element
+// // step 2. listen for element
+// // step 3. React element
+//-----------------------------------------------------------------------------------
+
+/*
+* #3.7 CSS in Javascript Part Two
+*
+* Written by ZOONG
+* Created date : 2021-08-28
+*/
+const CLICKED = "clicked";
+
 const h1 = document.querySelector("div.hello h1");
 
-function handlerTitleClick() {
-    const currentColor = h1.style.color;
-    let newColor;
-
-    if(currentColor === "blue"){
-       newColor = "tomato";
+function handleTitleClick() { 
+    if(h1.className === CLICKED) {
+        h1.className = "";
     } else {
-        newColor = "blue";
+        h1.className = CLICKED;
     }
-    h1.style.color = newColor;
 }
 
-h1.addEventListener("click", handlerTitleClick);
-
-// Javascript Steps!
-// step 1. Find the element
-// step 2. listen for element
-// step 3. React element
+h1.addEventListener("click", handleTitleClick);
 //-----------------------------------------------------------------------------------
