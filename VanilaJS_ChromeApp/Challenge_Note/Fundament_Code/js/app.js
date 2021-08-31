@@ -554,3 +554,5 @@ function handleTitleClick() {
     
 
 h1.addEventListener("click", handleTitleClick);
+
+// #4.0부터는 Clone_Code_v2.0 폴더에서 이어집니다.
