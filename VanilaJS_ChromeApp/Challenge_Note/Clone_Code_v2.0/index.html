@@ -8,11 +8,13 @@
     <title>Momentum App</title>
 </head>
 <body>
-    <div id="login-form">
-        <input type="text" placeholder="What is your name?"/>
-        <button>Log In</button>
-    </div>
+    <!-- input의 유효성 검사를 작동시키기 위해서는 form태그에 삽입해야한다. -->
+    <form id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is your name?"/>
+        <input type="submit" value="Log In"/>
+    </form>
 
+    <!-- form submit이 동작할때마다 페이지가 새로고침 되는 것을 방지해야한다. -->
     <script src="app.js"></script>
 </body>
 </html>

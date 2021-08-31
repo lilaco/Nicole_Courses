@@ -4,9 +4,14 @@ const loginButton = document.querySelector("#login-form button");
 
 
 function onLoginBtnClick() {
-    console.dir(loginInput);
-    console.log("clicked!" + loginInput.value);
+    
     // We need to add validate system.
+    const username = loginInput.value;
+    if (username === "") {
+        alert("Please write your name");
+    } else if (username.length > 15) {
+        alert("Your name is too long.");
+    }
 }
 
 loginButton.addEventListener("click", onLoginBtnClick);
