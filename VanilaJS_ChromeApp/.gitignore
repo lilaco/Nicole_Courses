@@ -2,10 +2,14 @@
 /Challenge_Note/Section_01/.cache
 /Challenge_Note/Section_01/dist
 /Challenge_Note/Section_01/node_modules
-
 /Challenge_Note/Section_01/package-lock.json
 
 /Challenge_Note/Section_02/.cache
 /Challenge_Note/Section_02/dist
 /Challenge_Note/Section_02/node_modules
 /Challenge_Note/Section_02/package-lock.json
+
+/Challenge_Note/Section_03/.cache
+/Challenge_Note/Section_03/dist
+/Challenge_Note/Section_03/node_modules
+/Challenge_Note/Section_03/package-lock.json
