@@ -18,3 +18,8 @@
 /Challenge_Note/Section_04/dist
 /Challenge_Note/Section_04/node_modules
 /Challenge_Note/Section_04/package-lock.json
+
+/Challenge_Note/Section_05/.cache
+/Challenge_Note/Section_05/dist
+/Challenge_Note/Section_05/node_modules
+/Challenge_Note/Section_05/package-lock.json
